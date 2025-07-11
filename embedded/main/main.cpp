@@ -1,4 +1,5 @@
 #include <Arduino.h>
+
 #include <Wire.h>
 #include <SPI.h>
 
@@ -22,6 +23,7 @@ void test1(void);
 void test2(void);
 
 PCA9557 out;
+
 LGFX lcd;
 
 extern "C" void app_main(void)
