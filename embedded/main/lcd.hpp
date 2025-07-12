@@ -1,5 +1,7 @@
-#ifndef LCD_CONF_H
-#define LCD_CONF_H
+#ifndef COFFEE_LCD_HPP
+#define COFFEE_LCD_HPP
+
+#include <Arduino.h>
 
 #define LGFX_USE_V1
 #include <LovyanGFX.hpp>
@@ -110,4 +112,14 @@ public:
         setPanel(&_panel);
     }
 };
+
+extern PCA9557 out;
+
+extern LGFX lcd;
+
+/**
+ * @brief Initialize LCD
+ * @return LCD initialization success
+ */
+bool init_lcd(void);
 #endif
