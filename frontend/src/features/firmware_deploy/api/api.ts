@@ -10,7 +10,7 @@ import { deviceApiService } from "../../../entities/device/api/api";
  * @returns {Promise<Region[]>} Promise that resolves to an array of Region objects
  */
 export const fetchRegions = async (): Promise<Region[]> => {
-  return await RegionApiService.getAll();
+  return await RegionApiService.getRegions();
 };
 
 /**
@@ -18,7 +18,7 @@ export const fetchRegions = async (): Promise<Region[]> => {
  * @returns {Promise<Group[]>} Promise that resolves to an array of Group objects
  */
 export const fetchGroups = async (): Promise<Group[]> => {
-  return await GroupApiService.getAll();
+  return await GroupApiService.getGroups();
 };
 
 /**
@@ -26,5 +26,5 @@ export const fetchGroups = async (): Promise<Group[]> => {
  * @returns {Promise<Device[]>} Promise that resolves to an array of Device objects
  */
 export const fetchDevices = async (): Promise<Device[]> => {
-  return await deviceApiService.getAll();
+  return await deviceApiService.getDevices();
 };

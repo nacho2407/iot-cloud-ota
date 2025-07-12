@@ -1,4 +1,4 @@
-import { FormEvent, JSX, useEffect, useState } from "react";
+import { JSX, useEffect, useState } from "react";
 import { DeployCategory } from "../model/types";
 import { Region } from "../../../entities/region/model/types";
 import { Device } from "../../../entities/device/model/types";
@@ -106,8 +106,8 @@ export const FirmwareDeploy = ({
 
   const handleRegionSelection = (region: Region) => {
     setSelectedRegions((prev) => {
-      if (prev.some((r) => r.id === region.id)) {
-        return prev.filter((r) => r.id !== region.id);
+      if (prev.some((r) => r.regionId === region.regionId)) {
+        return prev.filter((r) => r.regionId !== region.regionId);
       }
       return [...prev, region];
     });
@@ -115,8 +115,8 @@ export const FirmwareDeploy = ({
 
   const handleGroupSelection = (group: Group) => {
     setSelectedGroups((prev) => {
-      if (prev.some((g) => g.id === group.id)) {
-        return prev.filter((g) => g.id !== group.id);
+      if (prev.some((g) => g.groupId === group.groupId)) {
+        return prev.filter((g) => g.groupId !== group.groupId);
       }
       return [...prev, group];
     });
@@ -124,8 +124,8 @@ export const FirmwareDeploy = ({
 
   const handleDeviceSelection = (device: Device) => {
     setSelectedDevices((prev) => {
-      if (prev.some((d) => d.id === device.id)) {
-        return prev.filter((d) => d.id !== device.id);
+      if (prev.some((d) => d.deviceId === device.deviceId)) {
+        return prev.filter((d) => d.deviceId !== device.deviceId);
       }
       return [...prev, device];
     });
@@ -161,19 +161,19 @@ export const FirmwareDeploy = ({
         return {
           message: "선택된 리전",
           count: selectedRegions.length,
-          items: selectedRegions.map((r) => r.name).join(", "),
+          items: selectedRegions.map((r) => r.regionName).join(", "),
         };
       case "device":
         return {
           message: "선택된 기기",
           count: selectedDevices.length,
-          items: selectedDevices.map((d) => d.id).join(", "),
+          items: selectedDevices.map((d) => d.deviceName).join(", "),
         };
       case "group":
         return {
           message: "선택된 그룹",
           count: selectedGroups.length,
-          items: selectedGroups.map((g) => g.name).join(", "),
+          items: selectedGroups.map((g) => g.groupName).join(", "),
         };
       default:
         return {
