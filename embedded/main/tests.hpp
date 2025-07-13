@@ -3,15 +3,18 @@
 
 #include <Arduino.h>
 
-#include "lcd.hpp"
+#include "display.hpp"
 
-/**
- * @brief Test serial communication
- */
-void test1(void);
+namespace coffee
+{
+    /**
+     * @brief test serial communication
+     */
+    void test1(void);
 
-/**
- * @brief Test lcd
- */
-void test2(void);
+    /**
+     * @brief test LCD
+     */
+    void test2(void);
+}
 #endif

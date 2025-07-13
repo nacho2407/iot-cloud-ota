@@ -1,11 +1,11 @@
 #include "tests.hpp"
 
-void test1(void)
+void coffee::test1(void)
 {
     Serial.println("Hello, world!");
 }
 
-void test2(void)
+void coffee::test2(void)
 {
     lcd.fillScreen(TFT_BLUE);
     delay(1000);
@@ -23,7 +23,7 @@ void test2(void)
 
     lcd.fillCircle(100, 100, 50, TFT_YELLOW);
 
-    lcd.setCursor((int32_t) screen_width / 2, (int32_t) screen_height / 2);
+    lcd.setCursor((int32_t) COFFEE_DISPLAY_WIDTH / 2, (int32_t) COFFEE_DISPLAY_HEIGHT / 2);
     lcd.print("Hello, world!");
 
     Serial.println("Hi, LCD!");

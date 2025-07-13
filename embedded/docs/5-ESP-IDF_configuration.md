@@ -40,13 +40,13 @@
   // /main/main.cpp
   #include <Arduino.h> // 필수 포함 헤더
 
-  #define BAUD_RATE // ESP-IDF 시리얼 모니터에서 출력을 받기 위해서는 Baud Rate을 115200 설정하는 것이 적절(작으면 출력을 못 받음)
+  #define COFFEE_BAUD_RATE 115200 // ESP-IDF 시리얼 모니터에서 출력을 받기 위해서는 Baud Rate을 115200 설정하는 것이 적절(작으면 출력을 못 받음)
 
   extern "C" void app_main(void)
   {
       initArduino(); // Arduino core for the ESP32를 사용하기 위한 초기화 함수
 
-      Serial.begin(BAUD_RATE);
+      Serial.begin(COFFEE_BAUD_RATE);
 
       Serial.println("Hello, world!");
   }
