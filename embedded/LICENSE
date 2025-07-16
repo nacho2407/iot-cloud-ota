@@ -1,0 +1,66 @@
+MIT License
+
+Copyright (c) 2025 coffee-is-essential
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction, including without limitation the rights  
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell  
+copies of the Software, and to permit persons to whom the Software is  
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all  
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR  
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,  
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE  
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER  
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,  
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN  
+THE SOFTWARE.
+
+---
+
+서드파티 라이브러리 및 라이선스 정보
+Third-party libraries used in this project and their licenses
+
+다음 라이브러리들은 본 프로젝트에 포함되어 있으며, 각각의 라이선스를 따릅니다.
+The following libraries are included in this project and are subject to their respective licenses:
+
+1. arduino-esp32
+   Arduino core for the ESP32
+   License: GNU Lesser General Public License Version 2.1
+   https://github.com/espressif/arduino-esp32
+
+2. gt911-arduino
+   Arduino library for GT911
+   License: Apache License Version 2.0
+   https://github.com/TAMCTec/gt911-arduino
+
+3. LovyanGFX
+   SPI LCD graphics library for ESP32 (ESP-IDF/ArduinoESP32) / ESP8266 (ArduinoESP8266) / SAMD51(Seeed ArduinoSAMD51)
+   License: FreeBSD License
+   Includes: Adafruit_ILI9341(MIT License), Adafruit_GFX(BSD License), TFT_eSPI(FreeBSD License)
+   https://github.com/lovyan03/LovyanGFX
+
+4. lvgl
+   Embedded graphics library to create beautiful UIs for any MCU, MPU and display type.
+   License: MIT License
+   https://github.com/lvgl/lvgl
+
+5. PCA9557
+   Arduino library for PCA9557 I2C 8-bit IO Expander
+   License: MIT License
+   https://github.com/wgrs33/PCA9557
+
+각 라이브러리에 대한 LICENSE 전문은 각 라이브러리 디렉토리에 별도로 포함되어 있습니다.
+Each library's full license text is provided separately within its own directory.
+
+---
+
+참고 사항
+Notice
+
+이 프로젝트는 오픈소스 라이브러리를 기반으로 하며, 각 라이브러리의 저작권 고지와 라이선스를 성실히 준수합니다.  
+This project relies on open-source libraries and complies with all applicable license requirements, including attribution and redistribution rules.

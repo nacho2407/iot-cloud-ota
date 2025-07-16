@@ -8,12 +8,16 @@
 namespace coffee
 {
     /**
-     * @brief test serial communication
+     * @brief 시리얼 통신을 테스트합니다
+     * 
+     *        tests serial communication
      */
     void test1(void);
 
     /**
-     * @brief test LCD
+     * @brief LCD 출력을 테스트합니다
+     * 
+     *        tests LCD output
      */
     void test2(void);
 }
