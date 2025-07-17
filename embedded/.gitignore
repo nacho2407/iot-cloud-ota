@@ -4,5 +4,8 @@
 # ESP-IDF build files
 build/
 
+# External libraries
+components/
+
 # Private data and personal text files
 private/

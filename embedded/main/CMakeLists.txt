@@ -1,3 +1,3 @@
-idf_component_register(SRCS "display.cpp" "main.cpp" "sd.cpp" "tests.cpp" "touch.cpp"
+idf_component_register(SRCS "main.cpp"
                         INCLUDE_DIRS "."
-                        REQUIRES arduino-esp32 gt911-arduino LovyanGFX lvgl PCA9557)
+                        REQUIRES arduino-esp32 coffee-driver)
