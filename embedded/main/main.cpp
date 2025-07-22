@@ -2,7 +2,6 @@
 
 #include <driver.hpp>
 
-#include <lvgl.h>
 #include <demos/lv_demos.h>
 #include <examples/lv_examples.h>
 
@@ -13,13 +12,14 @@ extern "C" void app_main(void)
     initArduino();
     Serial.begin((unsigned long) COFFEE_BAUD_RATE);
 
-    coffee::init_driver();
+    if(!coffee::init_drivers())
+        return;
 
     lv_demo_widgets();
 
-    while (true)
-    {
-        lv_timer_handler(); /* let the GUI do its work */
+    while (true) {
+        lv_timer_handler();
+
         delay(10);
     }
 }
